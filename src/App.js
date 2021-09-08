@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import AlertComponent from './components/AlertComponent/AlertComponent';
 import CheckButton from './components/CheckButton/CheckButton';
+import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import InputComponent from './components/InputComponent/InputComponent';
 
@@ -179,6 +180,9 @@ class App extends React.Component {
                 </div>
                 <div className='content-alert-wrapper'>
                     {clickCount > 0 && <AlertComponent isDatePalindrome={success} dayCount={dayCount} nextDate={nextDate}/>}
+                </div>
+                <div className='content-footer-wrapper'>
+                    <Footer />
                 </div>
             </div>
         )
