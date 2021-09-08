@@ -1,0 +1,25 @@
+.input-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.input-box {
+  height: 48px;
+  padding: 16px;
+  width: 300px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  font-size: 18px;
+  transition: 0.4s ease;
+  box-shadow: 0 4px 16px #e8e7fe;
+}
+
+.input-box::placeholder {
+  color: #4f6177;
+}
+
+.input-box:focus {
+  border: 1px solid #117ee5;
+}

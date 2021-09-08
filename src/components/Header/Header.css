@@ -1,0 +1,10 @@
+.header-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.header-text {
+  font-size: 60px;
+  font-weight: 700;
+  color: #0e1952;
+}
