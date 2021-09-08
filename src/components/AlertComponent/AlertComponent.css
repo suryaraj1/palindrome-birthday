@@ -10,6 +10,8 @@
   font-weight: 600;
   font-size: 18px;
   color: #4d94ff;
+  position: relative;
+  bottom: 40px;
   box-shadow: 0 4px 16px #e8e7fe;
 }
 
