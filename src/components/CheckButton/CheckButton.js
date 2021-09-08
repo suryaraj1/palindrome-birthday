@@ -1,10 +1,10 @@
 import React from 'react';
 import './CheckButton.css';
 
-const CheckButton = () => {
+const CheckButton = ({ clickHandler }) => {
     return (
         <div className='btn-wrapper'>
-            <button>Check Birthday</button>
+            <button onClick={clickHandler}>Check Birthday</button>
         </div>
     )
 }
