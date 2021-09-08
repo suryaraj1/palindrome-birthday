@@ -1,21 +1,26 @@
 import React from 'react';
 import './App.css';
+import AlertComponent from './components/AlertComponent/AlertComponent';
+import CheckButton from './components/CheckButton/CheckButton';
 import Header from './components/Header/Header';
 import InputComponent from './components/InputComponent/InputComponent';
-import CheckButton from './components/CheckButton/CheckButton';
 
 class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             birthDate: "",
+            success: false,
+            dayCount: 0,
+            nextDate: "",
+            clickCount: 0,
         }
     }
 
     inputHandler = date => {
         this.setState({
             birthDate: date
-        }, () => console.log(this.state.birthDate))
+        })
     }
 
     reverseString = str => {
@@ -137,26 +142,39 @@ class App extends React.Component {
             }
         }
         if (palindromeFound) {
-            console.log('yes');
+            this.setState({
+                success: true,
+            })
         } else {
             const [dayCount, nextDate] = this.getNextPalindromeDate(dateObj);
-            console.log(dayCount, nextDate);
+            this.setState({
+                dayCount,
+                nextDate,
+                success: false,
+            })
         }
     }
     
 
     onClickHandler = () => {
-        const { birthDate } = this.state;
+        const { birthDate, clickCount } = this.state;
         this.isBirthdatePalindrome(birthDate);
+        this.setState({
+            clickCount: clickCount + 1
+        })
     }
 
     render() {
+        const { success, dayCount, nextDate, clickCount } = this.state;
         return (
             <div className='content-wrapper'>
                 <Header />
                 <div className='content-input-wrapper'>
                     <InputComponent handler={this.inputHandler}/>
                     <CheckButton clickHandler={this.onClickHandler}/>
+                </div>
+                <div className='content-alert-wrapper'>
+                    {clickCount > 0 && <AlertComponent isDatePalindrome={success} dayCount={dayCount} nextDate={nextDate}/>}
                 </div>
             </div>
         )
