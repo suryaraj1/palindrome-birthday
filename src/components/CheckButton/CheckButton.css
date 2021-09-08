@@ -19,6 +19,14 @@
   transition: 0.4s ease;
 }
 
+.btn-wrapper .disabled {
+  opacity: 0.5;
+}
+
+.btn-wrapper .disabled:hover {
+  transform: scale(1);
+}
+
 .btn-wrapper button:hover {
   background: #2e8be8;
   transform: scale(1.02);

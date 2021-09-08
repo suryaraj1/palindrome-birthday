@@ -155,6 +155,10 @@ class App extends React.Component {
         }
     }
     
+    validateInput = () => {
+        const { birthDate } = this.state;
+        return !(birthDate === "");
+    }
 
     onClickHandler = () => {
         const { birthDate, clickCount } = this.state;
@@ -171,7 +175,7 @@ class App extends React.Component {
                 <Header />
                 <div className='content-input-wrapper'>
                     <InputComponent handler={this.inputHandler}/>
-                    <CheckButton clickHandler={this.onClickHandler}/>
+                    <CheckButton clickHandler={this.onClickHandler} validator={this.validateInput()}/>
                 </div>
                 <div className='content-alert-wrapper'>
                     {clickCount > 0 && <AlertComponent isDatePalindrome={success} dayCount={dayCount} nextDate={nextDate}/>}
