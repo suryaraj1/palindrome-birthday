@@ -17,3 +17,11 @@
   background: #e7feee;
   color: #61b37c;
 }
+
+@media screen and (max-width: 500px) {
+  .alert-wrapper {
+    width: 80%;
+    padding: 24px 30px;
+    font-size: 13px;
+  }
+}
