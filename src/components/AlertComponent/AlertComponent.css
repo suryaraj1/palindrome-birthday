@@ -1,0 +1,19 @@
+.alert-wrapper {
+  height: 60px;
+  width: auto;
+  padding: 18px 28px;
+  background: #bed8ff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 18px;
+  color: #4d94ff;
+  box-shadow: 0 4px 16px #e8e7fe;
+}
+
+.alert-wrapper.success {
+  background: #e7feee;
+  color: #61b37c;
+}
