@@ -12,6 +12,10 @@ class InputComponent extends React.Component {
     onChangeHandler = event => {
         this.setState({
             input: event.target.value
+        }, () => {
+            const { handler } = this.props;
+            const { input } = this.state;
+            handler(input);
         })
     }
 
