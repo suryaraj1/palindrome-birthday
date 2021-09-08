@@ -1,0 +1,32 @@
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgba(79, 97, 119, 0.7);
+  margin-bottom: 20px;
+}
+
+.footer-social-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+}
+
+.footer-social {
+  height: 20px;
+  width: 20px;
+}
+
+.privacy-notice-wrapper p {
+  color: rgba(79, 97, 119, 0.7);
+  margin-top: 17px;
+  text-align: center;
+  font-size: 12px;
+}
