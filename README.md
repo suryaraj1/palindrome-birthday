@@ -29,3 +29,6 @@ Technologies used in the project:
 *   React
 *   CSS
 *   Netlify
+
+## Privacy Notice
+The web app does not store any sensitive information
