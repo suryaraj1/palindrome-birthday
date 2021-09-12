@@ -1,6 +1,15 @@
 <h1 align="center">Palindrome Birthday</h1>
-
 <p>Check if your birthday is a palindrome 🥳</p>
+
+## Project Description
+> Palindrome - A palindrome is a word, number, phrase, or other sequence of characters which reads the same backward as forward, such as madam or racecar.
+<br />
+The app essentialy takes an input which is your brith date and lets you know if your D.O.B is a palindrome or not.
+Also uses <a href="https://lottiefiles.com/" target="_blank">Lottiefiles</a> confetti animation to make a celebration if you happen to have a palindromic birthday!    🎉
+
+### Project checkpoints 📝
+* Button remains disabled till user enters a valid D.O.B
+* App checks against 4 different D.O.B formats to check for pailndrome
 
 <h2>🚀 Demo</h2>
 
@@ -8,7 +17,7 @@
 
 <h2>Project Screenshots:</h2>
 
-<img src="https://gcdn.pbrd.co/images/IyeUF7lUTMD1.png?o=1" alt="shields" width="850" height="400/">
+![projct screenshot](https://gcdn.pbrd.co/images/IyeUF7lUTMD1.png?o=1)
 
   
   
