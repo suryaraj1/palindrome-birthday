@@ -9,7 +9,7 @@ Also uses <a href="https://lottiefiles.com/" target="_blank">Lottiefiles</a> con
 
 ### Project checkpoints 📝
 * Button remains disabled till user enters a valid D.O.B
-* App checks against 4 different D.O.B formats to check for pailndrome
+* App checks against 6 different D.O.B formats to check for palindrome
 
 <h2>🚀 Demo</h2>
 
