@@ -13,7 +13,7 @@ Also uses <a href="https://lottiefiles.com/" target="_blank">Lottiefiles</a> con
 
 <h2>🚀 Demo</h2>
 
-[https://palindrome-birthday-1216.netlify.app/](https://palindrome-birthday-1216.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/472213ce-73ae-48f8-9709-b69024f4ea3f/deploy-status)](https://palindrome-birthday-1216.netlify.app/)
 
 <h2>Project Screenshots:</h2>
 
